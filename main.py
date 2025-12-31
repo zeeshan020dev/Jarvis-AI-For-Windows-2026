@@ -1,5 +1,4 @@
 import os
-import time
 import speech_recognition as sr
 import webbrowser
 import datetime
