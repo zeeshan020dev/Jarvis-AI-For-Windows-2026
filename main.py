@@ -4,6 +4,39 @@ import speech_recognition as sr
 import webbrowser
 import datetime
 import pyttsx3
+from google import genai
+from config import apikey
+import re
+
+def ai(prompt):
+    client = genai.Client(api_key=apikey)
+
+    response = client.models.generate_content(
+        model="gemini-2.5-flash",
+        contents=prompt
+    )
+
+    ai_text = response.text
+    print(ai_text)
+
+    if not os.path.exists("Openai"):
+        os.mkdir("Openai")
+
+    # Remove trigger words
+    query_text = prompt.replace("artificial intelligence", "").strip()
+
+    # Fallback filename
+    if not query_text:
+        query_text = "general_query"
+
+    # Windows-safe filename
+    safe_filename = re.sub(r'[\\/:*?"<>|]', '', query_text)
+
+    filepath = f"Openai/{safe_filename}.txt"
+
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(ai_text)
+
 
 def say(text):
     engine = pyttsx3.init()     # create new engine each time
@@ -64,6 +97,9 @@ if __name__ == "__main__":
             filepath = r"C:\5th Semester"
             say("Opening Notes Sir")
             os.startfile(filepath)
+
+        if "artificial intelligence" in query:
+            ai(prompt = query)
 
 
 
