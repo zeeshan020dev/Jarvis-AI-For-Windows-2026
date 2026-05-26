@@ -238,5 +238,3 @@ Co-Founder – [Unicodrex](https://www.linkedin.com/company/unicodrex/) | Techni
 ## ⭐ Support
 
 If you like this project, please ⭐ star the repository and share it!
-
----
