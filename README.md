@@ -228,7 +228,7 @@ This project is licensed under the **MIT License**.
 
 **[Muhammad Zeeshan Islam](https://github.com/zeeshan020dev)**
   
-Co-Founder – [Unicodrex](https://www.linkedin.com/company/unicodrex/) | Technical Lead – [Skill Sprint](https://www.linkedin.com/company/skill-sprint-pk/) | Trainee Game Developer – [CEGA](https://www.linkedin.com/company/cegaofficialpk/) | Prompt Engineer
+Co-Founder – [Unicodrex](https://www.linkedin.com/company/unicodrex/) | Technical Lead – [Skill Sprint](https://www.linkedin.com/company/skill-sprint-pk/) | Unity Game Developer – [CEGA](https://www.linkedin.com/company/cegaofficialpk/) | Prompt Engineer
 
 <a href="https://github.com/zeeshan020dev">
   <img src="https://img.shields.io/badge/GitHub-zeeshan020dev-ffffff?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" />
